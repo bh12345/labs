@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Лабораторная работа 3</title>
+		<link rel="stylesheet" href="lab3.css">
+		<script type="text/javascript" src="lab3.js"></script>
+	</head>
+	<body>
+	<div class="head">
+		<h1 class="title">Лабораторная работа 3</h1>
+	</div>
+		<form class="row" action="">
+			<label>Наименование:</label>
+			<input type="text" id="lname">
+			<label>Стоимость:</label>
+			<input type="number" id="cost">
+			<button type="button" onclick="add2()">Добавить на склад</button><br>			
+			<div class="row">Склад</div>			
+			<div class="table" title="Нажмите на строчку, чтобы добавить в корзину" id="t0">
+				<div class="row2">
+					<div class="cell"><span class="hd">Товары</span></div>
+					<div class="cell"><span class="hd">Цена</span></div>
+				</div>
+			</div>
+			<div class="table" id="t1">
+				<div class="row">Корзина</div>
+				<div class="row">
+					<div class="cell"><span class="hd">Товары</span></div>
+					<div class="cell"><span class="hd">Цена</span></div>
+					<div class="cell"><span class="hd">Количество</span></div>
+				</div>
+			</div>
+			<button type="button" onclick="summ()">Расчет стоимости</button>
+		</form>
+	</body>
+</html>
